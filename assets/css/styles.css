@@ -1,0 +1,225 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1f1f15d;
+    margin: auto 15%;
+}
+
+h1,
+h2 {
+    color: #ff0040;
+    text-shadow: 0 0 6px #ff7e9e;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+h1 {
+    margin: 100px 0 10px 0
+}
+
+h2 {
+    margin: 220px 0 30px 0
+}
+
+p {
+    text-align: center;
+}
+
+nav {
+    background-color: #ff0659;
+    padding: 10px 40px;
+    margin: 0 0 150px 0;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 0 6px #ff4995;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 2vw;
+}
+
+nav ul li a {
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 6px rgba(247, 247, 247, 0.92);
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    margin: 150px auto 0;
+    background: linear-gradient(90deg, #e933ff, #ffb400, #ff3333, #334dff, #e933ff);
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: white;
+    animation: textflow 5s linear infinite;
+    border: 4px double rgb(255, 255, 255);
+}
+
+table {
+    margin: 200px auto 200px;
+    background: linear-gradient(90deg, #e933ff, #ffb400, #ff3333, #334dff, #e933ff);
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: white;
+    animation: textflow 5s linear infinite;
+    border: 4px double rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+tr {
+    text-align: left;
+    text-shadow: 0 0 6px rgba(245, 245, 245, 0.92);
+    font-size: 20px;
+}
+
+td {
+    padding: 2px 15px 6px;
+}
+
+th {
+    padding: 3px 6px 6px 6px;
+    text-align: center;
+}
+
+p.flowtext {
+    font-size: 34px;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 0 0 6px rgba(224, 224, 224, 0.92);
+    font-weight: 500;
+}
+
+.flowtext {
+    background: linear-gradient(90deg, #e933ff, #ffb400, #ff3333, #334dff, #e933ff);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textflow 5s linear infinite;
+}
+
+@keyframes textflow {
+    from {
+        background-position: 0% center
+    }
+    to {
+        background-position: 200% center
+    }
+}
+
+.feedback {
+    width: 100%;
+    text-align: center;
+}
+
+.feedback h3 {
+    margin: 100px auto 15px;
+}
+
+.feedback form {
+    margin: 0 auto 210px;
+}
+
+.button-container {
+    background: white;
+    width: 90%;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 30px auto 30px;
+}
+
+.button-container h3, form {
+    margin: 20px 15px 20px;
+}
+
+section ul {
+    font-size: 20px;
+    list-style-type: "♡  ";
+}
+
+input:checked + label.pam {
+    color: #f700e2;
+}
+
+input:checked + label.pam1 {
+	color: rgb(0, 17, 255);
+}
+
+legend {
+    font-weight: 600;
+}
+
+label {
+    font-size: 16px;
+}
+
+.size {
+    font-size: 14px;
+}
+
+.button-container h3 {
+    font-size: 20px;
+}
+
+input:checked + label.size {
+	background: linear-gradient(90deg, #e933ff, #ffb400, #ff3333, #334dff, #e933ff);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textflow 5s linear infinite;
+}
+
+#formOutput {
+    text-align: center;
+}
+
+.lang-switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.education {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    table td {display: block;}
+    table th {
+        display: none;
+    }
+    .bold {
+        font-weight: bold;
+    }
+}
+

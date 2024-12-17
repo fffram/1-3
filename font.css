@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "mr_VlaShu";
+    src: local("mr_VlaShu"),
+    url("fonts/mr_VlaShu.woff") format("woff"),
+    url("fonts/mr_VlaShu.woff2") format("woff2");
+}
+
+body {
+    font-family: "mr_VlaShu", Arial, sans-serif;
+}
+
+button {
+    font-family: "mr_VlaShu", Arial, sans-serif;
+    color: #ff5e9b;
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    padding: 6px 12px;
+    font-weight: 400;
+    font-size: 15px;
+    border: 2px solid #fdc5d9;
+}
+
+button:hover {
+    box-shadow: 0 0 5px #ffcee2;
+    text-shadow: 0 0 3px #fdcde0;
+}
+
+button:active {
+    box-shadow: 0 0 5px #ff8fbc;
+    text-shadow: 0 0 3px #ffa1c6;
+}

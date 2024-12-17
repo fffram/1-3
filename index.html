@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets/js/script.js" defer></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="font.css">
+        <title>Document</title>
+    </head>
+    
+    
+    <body>
+        <button class="lang-switch" id="langSwitchButton">RU</button>
+    
+        <div class="a">
+            <nav>
+                <ul>
+                    <li><a href="#about" data-lang="О себе">О себе</a></li>
+                    <li><a href="#skills" data-lang="Навыки">Навыки</a></li>
+                    <li><a href="#education" data-lang="Образование">Образование</a></li>
+                    <li><a href="#contacts" data-lang="Контакты">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <section id="about">
+            <h1 data-lang="О себе">О себе</h1>
+            <p class="flowtext" data-lang="Я студентка СГУ им. Питирима Сорокина - Тримаруш Мария">Я студентка СГУ им. Питирима Сорокина - Тримаруш Мария</p>
+        </section>
+        <div class="container">
+            <img src="assets/images/4212901.jpeg" alt="Мизулина" width="900" height="200" />
+        </div>
+        <section id="skills">
+            <table>
+                    <tr>
+                        <th data-lang="Категория">Категория</th>
+                        <th data-lang="Навыки">Навыки</th>
+                    </tr>
+  
+                <tr>
+                    <td class="bold" data-lang="Технические навыки">Технические навыки</td>
+                    <td data-lang="HTML, CSS, JavaScript">HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td class="bold" data-lang="Управленческие навыки">Управленческие навыки</td>
+                    <td data-lang="Коммуникации">Коммуникации</td>
+                </tr>
+            </table>
+        </section>
+        <section id="education">
+            <h2 data-lang="Образование">Образование</h2>
+            <ul>
+                <li data-lang="МАОУ СОШ №4, среднее общее образование">МАОУ СОШ №4, среднее общее образование</li>
+                <li data-lang="МАОУ Технический лицей, образование в области медицины">МАОУ Технический лицей, образование в области медицины</li>
+            </ul>
+        </section>
+        <section id="contacts">
+            <h2 data-lang="Контакты">Контакты</h2>
+            <p>
+                Социальные сети:
+                <a href="https://structure.mil.ru/structure/ministry_of_defence/details.htm?id=9595@egOrganization">Телега</a>
+            </p>
+        </section>
+    
+        <div class="feedback">
+            <h3 data-lang="Свяжитесь со мной">Свяжитесь со мной</h3>
+            <form id="feedbackForm">
+                <label for="name" data-lang="Имя:">Имя:</label>
+                <input type="text" id="name" name="name"><br><br>
+    
+                <label for="email" data-lang="Email:">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+    
+                <label for="message" data-lang="Сообщение:">Сообщение:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+    
+                <button type="submit" data-lang="Отправить">Отправить</button>
+                <div id="response"></div>
+            </form>
+        </div>
+    
+        <div class="button-container">
+            <h3 data-lang="Опрос">Опрос</h3>
+            <form id="interestsForm">
+                <label for="name1" data-lang="Имя:">Имя:</label>
+                <input type="text" id="name1" name="name1"><br><br>
+                <label for="age1" data-lang="Возраст:">Возраст:</label>
+                <input type="number" id="age1" name="age1" min="1" max="120"><br><br>
+                <fieldset>
+                    <legend data-lang="Укажите ваш пол:">Укажите ваш пол:</legend>
+                    <div>
+                        <input type="radio" id="m" name="gender" value="m" checked />
+                        <label class="pam" for="m" data-lang="М">М</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="zh" name="gender" value="zh" />
+                        <label class="pam1" for="zh" data-lang="Ж">Ж</label>
+    
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend data-lang="Выберите ваши интересы:">Выберите ваши интересы:</legend>
+    
+                    <input type="checkbox" name="interests" value=" Чтение книг(?)" id="book"><label for="book" class="size" data-lang=" Чтение книг(?)"> Чтение книг(?)</label><br>
+                    <input type="checkbox" name="interests" value=" Просмотр фильмов/сериалов" id="film"><label for="film" class="size" data-lang=" Просмотр фильмов/сериалов"> Просмотр фильмов/сериалов</label><br>
+                    <input type="checkbox" name="interests" value=" Я анимешница" id="anime"><label for="anime" class="size" data-lang=" Я анимешница"> Я анимешница</label><br>
+                    <input type="checkbox" name="interests" value=" УТРОМ ПРЕСС КАЧАТ--" id="sport"><label for="sport" class="size" data-lang=" УТРОМ ПРЕСС КАЧАТ--"> УТРОМ ПРЕСС КАЧАТ--</label><br>
+                    <input type="checkbox" name="interests" value=" Я нормальный человек и трачу всё свободное время на ютуб, тик-ток и другую подобную х--" id="normal"><label for="normal" class="size" data-lang=" Я нормальный человек и трачу всё свободное время на ютуб, тик-ток и другую подобную х--"> Я нормальный человек и трачу всё свободное время на ютуб, тик-ток и другую подобную х--</label><br>
+                    <input type="checkbox" name="interests" value=" Что-то другое, что мне уже лень писать..." id="lazy"><label for="lazy" class="size" data-lang=" Что-то другое, что мне уже лень писать..."> Что-то другое, что мне уже лень писать...</label><br>
+                    <input type="checkbox" name="interests" value=" Люблю сидеть всю ночь и делать сайт, который увидят 2,5 человека" id="website"><label for="website" class="size" data-lang=" Люблю сидеть всю ночь и делать сайт, который увидят 2,5 человека"> Люблю сидеть всю ночь и делать сайт, который увидят 2,5 человека</label>
+    
+                    <div id="dynamic-interests"></div>
+                    <br><button type="button" id="addInterestButton" data-lang="Добавить новое поле для интересов">Добавить новое поле для интересов</button>
+                </fieldset>
+    
+                <br>
+    
+                <div id="interestModal" style="display:none;">
+                    <label for="newInterestText" data-lang="Введите текст нового интереса:">Введите текст нового интереса:</label>
+                    <input type="text" id="newInterestText">
+                    <button type="button" id="saveInterestButton" data-lang="Сохранить">Сохранить</button>
+                    <button type="button" id="cancelInterestButton" data-lang="Отмена">Отмена</button>
+                </div>
+    
+                <br>
+    
+                <label for="comment" data-lang="Комментарий:">Комментарий:</label>
+                <textarea id="comment" name="comment" maxlength="200" wrap="hard"></textarea><br><br>
+                <div id="charCount">0/200</div>
+                <br>
+                <button type="submit" data-lang="Отправить">Отправить</button>
+                <div id="response1"></div>
+            </form>
+    
+            <div id="formOutput"></div>
+        </div>
+    </body>
+</html>
